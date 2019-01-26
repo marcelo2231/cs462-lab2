@@ -21,6 +21,6 @@ ruleset io.picolabs.use_twilio_v2 {
                                 event:attr("from").defaultsTo(""))
       content = message{"content"}.decode()
     }
-    send_directive("content", {"content":content}.klog("content"))
+    send_directive("content", {"content":content})
   }
 }
